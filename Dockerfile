@@ -8,6 +8,7 @@ RUN sed -i 's/Listen 80/Listen 8080/g' /etc/httpd/conf/httpd.conf
 
 #RUN chown nobody:nobody /run -R
 RUN chmod 777 /run/httpd
+RUN chmod 777 /etc/httpd/logs
 RUN sed -i 's/root:.*/root:\$6\$e2v9kkVP$J59\/T4\.TRaCARI8Zs59HqpmhwWVVOFlnhZJl7NxdVjCMyb7BoPEcJOyatgq90GLJ7yXHCNUygUi3KU9wPNE\/00:16523:0:99999:7:::/g' /etc/shadow
 
 COPY . /
