@@ -1,4 +1,5 @@
-FROM docker.io/openshift/base-centos7
+FROM centos:centos7
+#FROM docker.io/openshift/base-centos7
 MAINTAINER Florian Lambert
 
 RUN yum -y update && yum clean all
